@@ -1,0 +1,39 @@
+\documentclass{report}
+\usepackage{outline}
+% [outline] includes new outline environment. I. A. 1. a. (1) (a)
+% use \begin{outline} \item ... \end{outline}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage{epstopdf}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathtools}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{hyphenat}
+\usepackage{color} 
+\usepackage{fancyhdr}
+
+\begin{document}
+\[
+ n_{eff} = \frac{\left(\sum\limits_{n=1}^N w_i\right)^2}{\sum\limits_{n=1}^N w_i^2}
+\]
+
+\[
+C_{P,res} = C_P - C_{P,ig}
+\]
+
+
+\begin{equation} 
+\hat{Z}\left(x_0\right) = \sum\limits_{i=1}^N w_i\left(x_0\right) \times Z\left(x_i\right) 
+\end{equation}
+
+
+\begin{align}
+                	&\underset{W}{\text{minimize}}& & W^T \cdot \operatorname{Var}_{x_i} \cdot W - \operatorname{Cov}_{x_ix_0}^T \cdot W - W^T \cdot \operatorname{Cov}_{x_ix_0} + \operatorname{Var}_{x_0} \\
+                	&\text{subject to}
+                	& &\mathbf{1}^T \cdot W = 1
+                	\end{align}
+\end{document}
